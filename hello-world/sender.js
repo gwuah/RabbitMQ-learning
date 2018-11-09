@@ -1,5 +1,5 @@
 const amqp = require('amqplib/callback_api');
-require('dotenv').config()
+require('dotenv').config({path: '../.env'});
 
 amqp.connect(process.env.RABBIT_MQ_SERVER_INSTANCE, function(err, conn) {
 
