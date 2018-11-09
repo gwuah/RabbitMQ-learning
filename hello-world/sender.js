@@ -1,8 +1,9 @@
 const amqp = require('amqplib/callback_api');
+require('dotenv').config()
 
-amqp.connect('amqp://localhost', function(err, conn) {
+amqp.connect(process.env.RABBIT_MQ_SERVER_INSTANCE, function(err, conn) {
 
-  if (err) console.log(err); process.exit(0);
+  if (err) console.log(err);
 
   conn.createChannel(function(err, ch){
 
