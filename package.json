@@ -1,0 +1,23 @@
+{
+  "name": "rabbitmq",
+  "version": "1.0.0",
+  "description": "Learning how to build with rabbit mq",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gwuah/RabbitMQ-learning.git"
+  },
+  "author": "gwuah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gwuah/RabbitMQ-learning/issues"
+  },
+  "homepage": "https://github.com/gwuah/RabbitMQ-learning#readme",
+  "dependencies": {
+    "amqplib": "^0.5.2",
+    "dotenv": "^6.1.0"
+  }
+}
