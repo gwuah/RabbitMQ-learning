@@ -18,6 +18,7 @@ amqp.connect(process.env.RABBIT_MQ_SERVER_INSTANCE, function(err, conn) {
       const secs = msg.content.toString().split('.').length - 1;
       setTimeout(() => {
         console.log(`Done ---> ${msg.content.toString()}`);
+        ch.ack(msg);
       }, secs*1000);
     }, {noAck: false})
 
